@@ -8,6 +8,9 @@
 - 에이전트는 에러 메시지를 읽고, 다른 도구를 시도하거나
   사용자에게 실패를 보고하는 등 논리적으로 대응할 수 있다.
 
+실행 방법:
+    uv run examples/example_6_safe_tool_node/main.py
+
 실행 흐름:
     [START] → [agent] → (tool_call 있음?) → [safe_tools] → [agent] → ... → [END]
 """

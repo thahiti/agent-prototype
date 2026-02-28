@@ -8,6 +8,9 @@
   Command(resume=...)로 재개한다.
 - Checkpointer(MemorySaver)가 중단 시점의 상태를 보존한다.
 
+실행 방법:
+    uv run examples/example_2_human_in_the_loop/main.py
+
 실행 흐름:
     [START] → [agent_node] → (라우터) → [human_review_node] → [execute_node] → [END]
                                 ↘ (승인 불필요) → [END]

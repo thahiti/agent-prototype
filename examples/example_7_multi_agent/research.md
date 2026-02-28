@@ -317,12 +317,7 @@ graph.add_edge("cli_agent", "supervisor")
 
 ### 의존성
 
-```
-langgraph>=0.2.0
-langchain-openai>=0.1.0
-langchain-core>=0.2.0
-langchain-tavily>=0.1.0
-```
+`pyproject.toml`에 정의되어 있다. `uv sync`로 설치한다.
 
 ---
 

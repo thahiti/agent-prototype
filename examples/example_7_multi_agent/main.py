@@ -8,6 +8,9 @@
 - 슈퍼바이저는 JSON 출력으로 다음 워커를 결정하고,
   모든 작업 완료 시 최종 답변을 생성한다.
 
+실행 방법:
+    uv run examples/example_7_multi_agent/main.py
+
 실행 흐름:
     [START] → [supervisor] → (라우터) → [web_search_agent] → [supervisor] → ...
                                        → [cli_agent]        → [supervisor]

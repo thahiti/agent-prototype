@@ -6,6 +6,9 @@
 - 비즈니스 로직 코드를 전혀 수정하지 않고도 모니터링을 추가할 수 있다.
 - 실제 프로덕션에서는 수집된 데이터를 외부 시스템(GaiA, Datadog 등)으로 전송한다.
 
+실행 방법:
+    uv run examples/example_1_observability/main.py
+
 실행 흐름:
     [START] → [chatbot (with @observe_agent)] → [END]
 """

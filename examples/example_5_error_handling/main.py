@@ -7,6 +7,9 @@
   1) 시스템 레벨: retry_policy로 네트워크 에러 등 일시 장애를 자동 재시도
   2) 로직 레벨: LLM이 잘못된 형식을 출력하면 에러 메시지와 함께 다시 시도하게 하는 자가 교정 루프
 
+실행 방법:
+    uv run examples/example_5_error_handling/main.py
+
 실행 흐름:
     [START] → [llm_node] → (라우터) → [END]         (성공 시)
                               ↘ [correction_node] → [llm_node]  (파싱 실패 시, 루프)

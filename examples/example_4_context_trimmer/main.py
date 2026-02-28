@@ -9,6 +9,9 @@
   1) 단순 트리밍: 최근 N개 메시지 + SystemMessage만 유지
   2) 요약 트리밍: 오래된 메시지를 LLM으로 요약하여 대체
 
+실행 방법:
+    uv run examples/example_4_context_trimmer/main.py
+
 실행 흐름:
     [START] → [trim_messages_node] → [chatbot] → [END]
 """

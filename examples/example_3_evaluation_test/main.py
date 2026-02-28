@@ -7,6 +7,9 @@
   2) LLM 심판 평가: 별도의 LLM이 1~5점으로 정확도를 채점.
 - CI/CD에서 pytest로 실행하여 품질 기준치를 자동으로 검증할 수 있다.
 
+실행 방법:
+    uv run examples/example_3_evaluation_test/main.py
+
 구조:
     [평가 대상 그래프] → 출력 생성 → [평가기 1: 임베딩 유사도]
                                     → [평가기 2: LLM 심판]
